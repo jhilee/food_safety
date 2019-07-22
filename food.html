@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="script.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link href="style.css" rel="stylesheet">
+<title>FDA Food Check</title>
+
+</head>
+<body>
+  <header>
+
+    <div class="row">
+      <div class="fda">
+      <img src="./images/fda.png">
+      </div>
+
+  </div>
+
+  </header>
+
+  <h1>Is your FOOD Safe?</h1>
+  <div class= "tab">
+    <button class="tablinks" onclick="openTab(event,'product_name')";>Adverse Events</button>
+    <button class="tablinks" onclick="openTab(event,'brand_name')";>Recall</button>
+</div>
+
+    <div id="product_name" class="tabcontent">
+      <label for="pname"> Product Name</label>
+      <input type="text" id="product_name_input" name="productname">
+    </div>
+    <div id="brand_name" class="tabcontent">
+      <label for="bname"> Brand Name</label>
+      <input type="text" id="brand_name_input" name="brandname">
+    </div>
+
+    <p id="noresult"></p>
+  <input type="submit" id="search" value="Search" onclick="search_click()">
+
+
+  <div id="donutchart" style="width: 900px; height: 500px;"></div>
+  <div id="table_div"></div>
+</body>
+
+
+
+</html>
