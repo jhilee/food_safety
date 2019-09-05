@@ -4,6 +4,7 @@
   "description": "Food Safety is a webapp where the user can search the safety of your food or brand of food product you purchased by reviewing the adverse events and recall enforcements. It utilizes OpenFDA APIs.",
   "main": "food.html",
   "scripts": {
+    "start": "node ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
